@@ -14,6 +14,8 @@
 		8D4E866C2871E1A800E86317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E866B2871E1A800E86317 /* Assets.xcassets */; };
 		8D4E866F2871E1A800E86317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E866D2871E1A800E86317 /* LaunchScreen.storyboard */; };
 		8D4E86722871E1A800E86317 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E86712871E1A800E86317 /* main.m */; };
+		8D4E867928726B3400E86317 /* metal-cpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E867828726B3400E86317 /* metal-cpp */; };
+		8D4E867B28726B3E00E86317 /* metal-cpp-extensions in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E867A28726B3E00E86317 /* metal-cpp-extensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8D4E866E2871E1A800E86317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D4E86702871E1A800E86317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4E86712871E1A800E86317 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D4E867828726B3400E86317 /* metal-cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "metal-cpp"; path = "thirdparty/metal-cpp"; sourceTree = "<group>"; };
+		8D4E867A28726B3E00E86317 /* metal-cpp-extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "metal-cpp-extensions"; path = "thirdparty/metal-cpp-extensions"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 		8D4E86532871E1A700E86317 = {
 			isa = PBXGroup;
 			children = (
+				8D4E867828726B3400E86317 /* metal-cpp */,
+				8D4E867A28726B3E00E86317 /* metal-cpp-extensions */,
 				8D4E865E2871E1A700E86317 /* MetalPractice */,
 				8D4E865D2871E1A700E86317 /* Products */,
 			);
@@ -133,9 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4E867928726B3400E86317 /* metal-cpp in Resources */,
 				8D4E866F2871E1A800E86317 /* LaunchScreen.storyboard in Resources */,
 				8D4E866C2871E1A800E86317 /* Assets.xcassets in Resources */,
 				8D4E866A2871E1A700E86317 /* Main.storyboard in Resources */,
+				8D4E867B28726B3E00E86317 /* metal-cpp-extensions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRSROOT)/thirdparty/metal-cpp",
+					"$(SRSROOT)/thirdparty/metal-cpp-extensions",
+				);
 				INFOPLIST_FILE = MetalPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -319,6 +331,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRSROOT)/thirdparty/metal-cpp",
+					"$(SRSROOT)/thirdparty/metal-cpp-extensions",
+				);
 				INFOPLIST_FILE = MetalPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
