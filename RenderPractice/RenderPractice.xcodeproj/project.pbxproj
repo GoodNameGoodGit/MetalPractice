@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D4E865C2871E1A700E86317 /* MetalPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4E865C2871E1A700E86317 /* RenderPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4E865F2871E1A700E86317 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D4E86602871E1A700E86317 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8D4E86622871E1A700E86317 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				8D4E867828726B3400E86317 /* metal-cpp */,
 				8D4E867A28726B3E00E86317 /* metal-cpp-extensions */,
 				8D4E867C28726C8E00E86317 /* Metal */,
-				8D4E865E2871E1A700E86317 /* MetalPractice */,
+				8D4E865E2871E1A700E86317 /* RenderPractice */,
 				8D4E865D2871E1A700E86317 /* Products */,
 				8D4E868728726E6800E86317 /* Frameworks */,
 			);
@@ -80,12 +80,12 @@
 		8D4E865D2871E1A700E86317 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D4E865C2871E1A700E86317 /* MetalPractice.app */,
+				8D4E865C2871E1A700E86317 /* RenderPractice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D4E865E2871E1A700E86317 /* MetalPractice */ = {
+		8D4E865E2871E1A700E86317 /* RenderPractice */ = {
 			isa = PBXGroup;
 			children = (
 				8D4E865F2871E1A700E86317 /* AppDelegate.h */,
@@ -100,7 +100,7 @@
 				8D4E86702871E1A800E86317 /* Info.plist */,
 				8D4E86712871E1A800E86317 /* main.m */,
 			);
-			path = MetalPractice;
+			path = RenderPractice;
 			sourceTree = "<group>";
 		};
 		8D4E867C28726C8E00E86317 /* Metal */ = {
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D4E865B2871E1A700E86317 /* MetalPractice */ = {
+		8D4E865B2871E1A700E86317 /* RenderPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D4E86752871E1A800E86317 /* Build configuration list for PBXNativeTarget "MetalPractice" */;
+			buildConfigurationList = 8D4E86752871E1A800E86317 /* Build configuration list for PBXNativeTarget "RenderPractice" */;
 			buildPhases = (
 				8D4E86582871E1A700E86317 /* Sources */,
 				8D4E86592871E1A700E86317 /* Frameworks */,
@@ -142,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = MetalPractice;
+			name = RenderPractice;
 			productName = MetalPractice;
-			productReference = 8D4E865C2871E1A700E86317 /* MetalPractice.app */;
+			productReference = 8D4E865C2871E1A700E86317 /* RenderPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8D4E86572871E1A700E86317 /* Build configuration list for PBXProject "MetalPractice" */;
+			buildConfigurationList = 8D4E86572871E1A700E86317 /* Build configuration list for PBXProject "RenderPractice" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D4E865B2871E1A700E86317 /* MetalPractice */,
+				8D4E865B2871E1A700E86317 /* RenderPractice */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 					"thirdparty/metal-cpp",
 					"thirdparty/metal-cpp-extensions",
 				);
-				INFOPLIST_FILE = MetalPractice/Info.plist;
+				INFOPLIST_FILE = RenderPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -365,7 +365,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.goodname.MetalPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodname.RenderPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,7 +385,7 @@
 					"thirdparty/metal-cpp",
 					"thirdparty/metal-cpp-extensions",
 				);
-				INFOPLIST_FILE = MetalPractice/Info.plist;
+				INFOPLIST_FILE = RenderPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -396,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.goodname.MetalPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodname.RenderPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D4E86572871E1A700E86317 /* Build configuration list for PBXProject "MetalPractice" */ = {
+		8D4E86572871E1A700E86317 /* Build configuration list for PBXProject "RenderPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D4E86732871E1A800E86317 /* Debug */,
@@ -415,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D4E86752871E1A800E86317 /* Build configuration list for PBXNativeTarget "MetalPractice" */ = {
+		8D4E86752871E1A800E86317 /* Build configuration list for PBXNativeTarget "RenderPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D4E86762871E1A800E86317 /* Debug */,
