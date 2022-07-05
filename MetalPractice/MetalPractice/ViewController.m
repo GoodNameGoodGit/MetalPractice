@@ -7,15 +7,20 @@
 
 #import "ViewController.h"
 
+#import "MetalViewRender.h"
+
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    MetalViewRender* metalView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    metalView = [[MetalViewRender alloc] initWithView:self.view];
 }
 
 

@@ -16,6 +16,12 @@
 		8D4E86722871E1A800E86317 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E86712871E1A800E86317 /* main.m */; };
 		8D4E867928726B3400E86317 /* metal-cpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E867828726B3400E86317 /* metal-cpp */; };
 		8D4E867B28726B3E00E86317 /* metal-cpp-extensions in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E867A28726B3E00E86317 /* metal-cpp-extensions */; };
+		8D4E868428726D0C00E86317 /* MetalViewRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E867F28726D0B00E86317 /* MetalViewRender.m */; };
+		8D4E868528726D0C00E86317 /* MetalRenderImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E868028726D0B00E86317 /* MetalRenderImpl.cpp */; };
+		8D4E868628726D0C00E86317 /* MetalRenderFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E868328726D0C00E86317 /* MetalRenderFactory.cpp */; };
+		8D4E868928726E6900E86317 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4E868828726E6900E86317 /* Metal.framework */; };
+		8D4E868B28726E6D00E86317 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4E868A28726E6D00E86317 /* MetalKit.framework */; };
+		8D4E868D28726E7300E86317 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4E868C28726E7300E86317 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,16 @@
 		8D4E86712871E1A800E86317 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D4E867828726B3400E86317 /* metal-cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "metal-cpp"; path = "thirdparty/metal-cpp"; sourceTree = "<group>"; };
 		8D4E867A28726B3E00E86317 /* metal-cpp-extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "metal-cpp-extensions"; path = "thirdparty/metal-cpp-extensions"; sourceTree = "<group>"; };
+		8D4E867D28726D0B00E86317 /* MetalRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalRender.h; sourceTree = "<group>"; };
+		8D4E867E28726D0B00E86317 /* MetalViewRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalViewRender.h; sourceTree = "<group>"; };
+		8D4E867F28726D0B00E86317 /* MetalViewRender.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MetalViewRender.m; sourceTree = "<group>"; };
+		8D4E868028726D0B00E86317 /* MetalRenderImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetalRenderImpl.cpp; sourceTree = "<group>"; };
+		8D4E868128726D0C00E86317 /* MetalRenderFactory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = MetalRenderFactory.h; sourceTree = "<group>"; };
+		8D4E868228726D0C00E86317 /* MetalRenderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalRenderImpl.h; sourceTree = "<group>"; };
+		8D4E868328726D0C00E86317 /* MetalRenderFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetalRenderFactory.cpp; sourceTree = "<group>"; };
+		8D4E868828726E6900E86317 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		8D4E868A28726E6D00E86317 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		8D4E868C28726E7300E86317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4E868D28726E7300E86317 /* Foundation.framework in Frameworks */,
+				8D4E868B28726E6D00E86317 /* MetalKit.framework in Frameworks */,
+				8D4E868928726E6900E86317 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +70,10 @@
 			children = (
 				8D4E867828726B3400E86317 /* metal-cpp */,
 				8D4E867A28726B3E00E86317 /* metal-cpp-extensions */,
+				8D4E867C28726C8E00E86317 /* Metal */,
 				8D4E865E2871E1A700E86317 /* MetalPractice */,
 				8D4E865D2871E1A700E86317 /* Products */,
+				8D4E868728726E6800E86317 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +101,30 @@
 				8D4E86712871E1A800E86317 /* main.m */,
 			);
 			path = MetalPractice;
+			sourceTree = "<group>";
+		};
+		8D4E867C28726C8E00E86317 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				8D4E867D28726D0B00E86317 /* MetalRender.h */,
+				8D4E868128726D0C00E86317 /* MetalRenderFactory.h */,
+				8D4E868328726D0C00E86317 /* MetalRenderFactory.cpp */,
+				8D4E868228726D0C00E86317 /* MetalRenderImpl.h */,
+				8D4E868028726D0B00E86317 /* MetalRenderImpl.cpp */,
+				8D4E867E28726D0B00E86317 /* MetalViewRender.h */,
+				8D4E867F28726D0B00E86317 /* MetalViewRender.m */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		8D4E868728726E6800E86317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D4E868C28726E7300E86317 /* Foundation.framework */,
+				8D4E868A28726E6D00E86317 /* MetalKit.framework */,
+				8D4E868828726E6900E86317 /* Metal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4E86672871E1A700E86317 /* ViewController.m in Sources */,
+				8D4E868528726D0C00E86317 /* MetalRenderImpl.cpp in Sources */,
 				8D4E86612871E1A700E86317 /* AppDelegate.m in Sources */,
+				8D4E868628726D0C00E86317 /* MetalRenderFactory.cpp in Sources */,
 				8D4E86722871E1A800E86317 /* main.m in Sources */,
 				8D4E86642871E1A700E86317 /* SceneDelegate.m in Sources */,
+				8D4E868428726D0C00E86317 /* MetalViewRender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +348,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4GW8AJ3LW;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRSROOT)/thirdparty/metal-cpp",
-					"$(SRSROOT)/thirdparty/metal-cpp-extensions",
+					"thirdparty/metal-cpp",
+					"thirdparty/metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = MetalPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,10 +379,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4GW8AJ3LW;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRSROOT)/thirdparty/metal-cpp",
-					"$(SRSROOT)/thirdparty/metal-cpp-extensions",
+					"thirdparty/metal-cpp",
+					"thirdparty/metal-cpp-extensions",
 				);
 				INFOPLIST_FILE = MetalPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
